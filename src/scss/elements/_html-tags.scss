@@ -1,0 +1,14 @@
+html {
+	font-size: 62.5%; /* Make use of 'rem' easier */
+}
+
+body {
+	font-size: $font-size-body;
+	font-family: $main-font-family;
+	font-weight: 600;
+}
+
+h1 {
+	color: $color-fucsia;
+	font-size: $font-size-h1;
+}
