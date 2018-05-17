@@ -1,0 +1,62 @@
+.header {
+	position: fixed;
+	top: 0;
+	background-color: darken($color-gray, 30%);
+	display: block;
+	height: 48px;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: $font-size-h4;
+	position: relative;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.btn-menu {
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 15px;
+}
+
+.posts-list {
+	display: grid;
+	padding: 15px 10px;
+	grid-auto-rows: 120px;
+	gap: 10px;
+	@include if-tablet-portrait {
+		grid-template-columns: repeat(3, 1fr);
+		.post {
+			background-color: blue;
+		}
+	}
+}
+
+.post {
+	background-color: $color-gray;
+	border-radius: 5px;
+	font-size: $font-size-h2;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.post_number {
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.footer {
+	position: fixed;
+	display: block;
+	height: 120px;
+	background-color: darken($color-gray, 30%);
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 120px;
+	font-size: $font-size-h4;
+}
