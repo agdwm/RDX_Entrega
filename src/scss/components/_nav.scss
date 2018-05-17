@@ -1,23 +1,23 @@
 .navigation {
 	grid-area: navigation;
-	
 
-	ul{
-		// display: flex;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 95px;
-	}
-	li {
-		height: 100%;
-		line-height: 95px;
-		text-align: center;
-		cursor: pointer;
-		a{
-			display: block;
-			width: 100%;
-			font-size: $font-size-h5;
-			text-transform: capitalize;
+	@include if-tablet-portrait {
+		ul{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 95px;
+		}
+		li {
+			height: 100%;
+			line-height: 95px;
+			text-align: center;
+			cursor: pointer;
+			a{
+				display: block;
+				width: 100%;
+				font-size: $font-size-h5;
+				text-transform: capitalize;
+			}
 		}
 	}
 }
