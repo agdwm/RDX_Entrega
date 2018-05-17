@@ -2,19 +2,19 @@
 	 ========================================================================== */
 
 @mixin if-mobile-portrait {
-	@media (max-width: #{$mobile-portrait-width}) {
+	@media ( max-width: #{$mobile-portrait-width}) {
 		@content;
 	}
 }
 
 @mixin if-mobile-landscape {
-	@media (min-width: #{$mobile-portrait-width} + 1) {
+	@media (min-width: #{$mobile-portrait-width + 1}) {
 		@content;
 	}
 }
 
 @mixin if-mobile {
-	@include if-mobile-portrait {
+	@media if-mobile-portrait {
 		@content;
 	}
 }
@@ -32,13 +32,13 @@
 }
 
 @mixin if-tablet {
-	@include if-tablet-portrait() {
+	@include if-tablet-portrait () {
 		@content;
 	}
 }
 
 @mixin if-desktop {
-	@include if-tablet-landscape() {
+	@include if-tablet-landscape () {
 		@content;
 	}
 }
