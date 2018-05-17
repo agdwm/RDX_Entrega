@@ -1,0 +1,20 @@
+.pushable-content {
+	position: relative;
+	left: 0;
+	display: grid;
+	height: 100vh;
+	grid-template-areas: "header"
+						 "main"
+						 "footer";
+	grid-template-rows: 48px 1fr 120px;
+	transition: $menu-mobile-transition;
+	
+	&.active{
+		position: relative;
+		left: 80%;
+		transition: $menu-mobile-transition;
+	}
+	@include if-tablet-portrait {
+		grid-template-rows: 95px 1fr 120px;
+	}
+}

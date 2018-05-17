@@ -1,0 +1,13 @@
+.footer {
+	grid-area: footer;
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 120px;
+	font-size: $font-size-h4;
+	line-height: 120px;
+	color: $base-color-light;
+	text-align: center;
+	background-color: darken($base-color-medium, 30%);
+}

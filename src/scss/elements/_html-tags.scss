@@ -3,15 +3,11 @@ html {
 }
 
 body {
-	font-size: $font-size-body;
 	font-family: $main-font-family;
+	font-size: $font-size-body;
 	font-weight: 600;
 }
 
 a {
-	color: $base-color-light;
 	text-decoration: none;
-	&:hover {
-		color: $brand-color;
-	}
- }
+}
