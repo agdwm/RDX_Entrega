@@ -1,58 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Redradix Entrega</title>
-	<link rel="stylesheet" href="./css/style.css">
-</head>
+@import "head.html"
 
 <body>
 	<div class="pushable-content" id="pushable-content">
-		<header class="header">
-			<button class="btn-menu " id="btn-menu">
-				<i class="hamburger"></i>
-			</button>
-			<div class="header_content" id="header-content">
-				<h1 class="logo" id="logo">
-					<a href="./">redradix</a>
-				</h1>
-				<nav class="navigation">
-					<ul>
-						<li><a href="javascript:;">about</a></li>
-						<li><a href="javascript:;">clients</a></li>
-						<li><a href="javascript:;">works</a></li>
-						<li><a href="javascript:;">contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="posts-list">
-			<div class="post">
-				<span class="post_number">A</span>
-			</div>
-			<div class="post">
-				<span class="post_number">B</span>
-			</div>
-			<div class="post">
-				<span class="post_number">C</span>
-			</div>
-			<div class="post">
-				<span class="post_number">D</span>
-			</div>
-			<div class="post">
-				<span class="post_number">E</span>
-			</div>
-			<div class="post">
-				<span class="post_number">F</span>
-			</div>
-		</main>
-		<footer class="footer">
-			<p>Footer</p>
-		</footer>
+		@import "header.html"
+		@import "posts-list.html"
+		@import "footer.html"
 	</div>
+
 	<script src="/js/main.js"></script>
 </body>
 
