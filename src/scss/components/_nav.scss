@@ -1,24 +1,28 @@
 .navigation {
-	grid-area: navigation;
-	position: fixed;
-	left: -80%;
-	width: 80%;
-	height: 100%;
-	background-color: lighten($base-color-medium, 10%);
-	transition: $menu-mobile-transition;
-	a {
-		color: $base-color-dark;
-		text-transform: capitalize;
-		font-size: $font-size-h6;
+	margin-top: 115px;
+	li {
+		a {
+			display: block;
+			padding: 15px 30px;
+			margin: 1px 0;
+			font-size: $font-size-h6;
+			color: darken($base-color-medium, 30%);
+			text-transform: capitalize;
+			&:hover {
+				color: darken($base-color-medium, 50%);
+			}
+		}
 	}
-
-	&.active{
-		left: 0;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
-		transition: $menu-mobile-transition;
+	@include if-mobile-landscape {
+		li {
+			a {
+				padding: 15px 0;
+				text-align: center;
+			}
+		}
 	}
 	@include if-tablet-portrait {
-		ul{
+		ul {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: 95px;
@@ -28,7 +32,7 @@
 			line-height: 95px;
 			text-align: center;
 			cursor: pointer;
-			a{
+			a {
 				display: block;
 				width: 100%;
 				font-size: $font-size-h5;

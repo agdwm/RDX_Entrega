@@ -2,7 +2,7 @@
 	 ========================================================================== */
 
 @mixin if-mobile-portrait {
-	@media ( max-width: #{$mobile-portrait-width}) {
+	@media (max-width: #{$mobile-portrait-width}) {
 		@content;
 	}
 }

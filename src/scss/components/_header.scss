@@ -43,18 +43,17 @@
 			box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 			transition: .3s;
 			@include centerer;
-	
+
 			&::before,
 			&::after{
-				content: "";
 				width: 26px;
 				height: 4px;
+				content: "";
 				background-color: $base-color-light;
 				box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 				transition: .3s;
 				@include centerer;
 			}
-	
 			&::before {
 				top: - 6px;
 			}
@@ -63,26 +62,45 @@
 			}
 		}
 	}
-	
-
-	.logo {
-		@include centerer();
-
-		grid-area: logo;
-		font-size: $font-size-h5;
-		color: $base-color-light;
-
-	}
 
 	@include if-tablet-portrait{
 		display: grid;
 		grid-template-columns: 45% 55%;
-		grid-template-areas: "logo navigation";
+		grid-template-areas: "logo headerContent";
 		align-content: center;
 
 		.btn-menu {
 			display: none;
 		}
+	}
+}
+
+.header_content {
+	grid-area: headerContent;
+	position: fixed;
+	left: -80%;
+	width: 80%;
+	height: 100%;
+	background-color: lighten($base-color-medium, 10%);
+	transition: $menu-mobile-transition;
+
+	.logo {
+		@include centerer(true, false);
+
+		top: 45px;
+		grid-area: logo;
+		font-size: $font-size-h5;
+		a {
+			color: darken($base-color-medium, 40%);
+		}
+	}
+
+	&.active{
+		left: 0;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+		transition: $menu-mobile-transition;
+	}
+	@include if-tablet-portrait {
 		.logo{
 			@include centerer(false, true);
 
