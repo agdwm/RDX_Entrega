@@ -16,3 +16,10 @@ TERMINAL 2:
 
 La página web se servirá en:
 ***http://localhost:3100/***
+
+___
+
+### Notas:
+- Gestor de tareas: **Gulp**
+- Preprocesador: **SASS**
+- Framework: Para la maquetación no se ha utilizado ningún framework, sino que se ha recurrido a **CSS Grid** para la realización del layout.
