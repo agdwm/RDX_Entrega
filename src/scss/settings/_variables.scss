@@ -1,20 +1,18 @@
 /* Colors
 	 ========================================================================== */
-$brand-color-dark: #D91B73 !default;
-$brand-color: #F91D97 !default;
-$base-color-medium: #DBDBDB !default;
-$base-color-dark: #000000 !default;
-$base-color-light: #FFFFFF !default;
+$color-base-medium: #DBDBDB !default;
+$color-base-dark: #000000 !default;
+$color-base-light: #FFFFFF !default;
 
 
 /* Fonts
 	 ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 // Font Families
-$main-font-family: 'Lato', sans-serif !default;
-$brand-font-family: 'Work Sans', sans-serif !default;
+$main-font-family: "Lato", sans-serif !default;
+$brand-font-family: "Work Sans", sans-serif !default;
 
 //Font Sizes
 $font-size-body: 1.4rem !default;

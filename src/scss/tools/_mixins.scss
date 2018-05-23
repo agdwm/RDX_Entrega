@@ -1,14 +1,5 @@
-/* Helpers
+/* Mixins and Functions
 	 ========================================================================== */
-
-@mixin clearfix() {
-	&::after {
-		display: block;
-		clear: both;
-		content: "";
-	}
-}
-
 @mixin centerer($horizontal: true, $vertical: true) {
 	position: absolute;
 	@if ($horizontal and $vertical) {

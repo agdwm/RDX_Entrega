@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 48px;
 	text-transform: uppercase;
-	background-color: darken($base-color-medium, 30%);
+	background-color: darken($color-base-medium, 30%);
 
 	.btn-menu {
 		left: 15px;
@@ -39,7 +39,7 @@
 		.hamburger{
 			width: 26px;
 			height: 4px;
-			background-color: $base-color-light;
+			background-color: $color-base-light;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 			transition: .3s;
 			@include centerer;
@@ -49,7 +49,7 @@
 				width: 26px;
 				height: 4px;
 				content: "";
-				background-color: $base-color-light;
+				background-color: $color-base-light;
 				box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 				transition: .3s;
 				@include centerer;
@@ -68,6 +68,7 @@
 		grid-template-columns: 45% 55%;
 		grid-template-areas: "logo headerContent";
 		align-content: center;
+		height: 95px;
 
 		.btn-menu {
 			display: none;
@@ -81,17 +82,20 @@
 	left: -80%;
 	width: 80%;
 	height: 100%;
-	background-color: lighten($base-color-medium, 10%);
+	background-color: lighten($color-base-medium, 10%);
 	transition: $menu-mobile-transition;
 
-	.logo {
-		@include centerer(true, false);
-
-		top: 45px;
+	.logo{
+		position: fixed;
+		top: 15px;
+		left: 50%;
 		grid-area: logo;
+		font-family: $brand-font-family;
 		font-size: $font-size-h5;
+		transform: translateX(-50%);
+
 		a {
-			color: darken($base-color-medium, 40%);
+			color: $color-base-light;
 		}
 	}
 
@@ -99,12 +103,30 @@
 		left: 0;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 		transition: $menu-mobile-transition;
+
+		.logo {
+			@include centerer(true, false);
+
+			top: 45px;
+
+			a {
+				color: darken($color-base-medium, 40%);
+			}
+		}
 	}
+
 	@include if-tablet-portrait {
+		position: static;
+		width: 100%;
+		background: none;
+
 		.logo{
 			@include centerer(false, true);
 
 			left: 50px;
+			a {
+				color: #FFFFFF;
+			}
 		}
 	}
 }

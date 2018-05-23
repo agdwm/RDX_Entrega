@@ -7,8 +7,8 @@
 	.post {
 		position: relative;
 		font-size: $font-size-h2;
-		color: $base-color-light;
-		background-color: $base-color-medium;
+		color: $color-base-light;
+		background-color: $color-base-medium;
 		border-radius: 5px;
 	}
 	@include if-mobile-landscape {
