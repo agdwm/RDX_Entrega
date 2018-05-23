@@ -87,7 +87,7 @@
 
 	.logo{
 		position: fixed;
-		top: 15px;
+		top: 0;
 		left: 50%;
 		grid-area: logo;
 		font-family: $brand-font-family;
@@ -95,6 +95,8 @@
 		transform: translateX(-50%);
 
 		a {
+			display: block;
+			padding: 15px 30px;
 			color: $color-base-light;
 		}
 	}
@@ -107,9 +109,13 @@
 		.logo {
 			@include centerer(true, false);
 
-			top: 45px;
+			top: 30px;
+			width: 100%;
+			text-align: center;
 
 			a {
+				display: block;
+				padding: 15px;
 				color: darken($color-base-medium, 40%);
 			}
 		}

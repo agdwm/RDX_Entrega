@@ -8,8 +8,9 @@
 			font-size: $font-size-h6;
 			color: darken($color-base-medium, 30%);
 			text-transform: capitalize;
+			transition: color .3s ease-in;
 			&:hover {
-				color: darken($color-base-medium, 50%);
+				color: lighten($color-base-dark, 20%);
 			}
 		}
 	}
@@ -42,7 +43,7 @@
 				text-transform: capitalize;
 
 				&:hover {
-					color: darken($color-base-light, 10%);
+					color: lighten($color-base-dark, 20%);
 				}
 			}
 		}
